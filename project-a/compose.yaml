@@ -1,0 +1,15 @@
+services:
+  api:
+    image: ghcr.io/jeonghwan-hwang/project-a:PLACEHOLDER   # CI updates this line
+    restart: always
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    labels:
+      company.project: project-a
+      company.service: api
+      company.owner: jeonghwan-hwang
