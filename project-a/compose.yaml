@@ -1,6 +1,6 @@
 services:
   api:
-    image: ghcr.io/jeonghwan-hwang/project-a:git-671c909abec78c0b3c96e01ece51b61bc5f25354
+    image: ghcr.io/jeonghwan-hwang/project-a:git-4a0325ee3dcd253cc963f406b745ad655eb6b7e4
     restart: always
     ports:
       - "8080:8080"
